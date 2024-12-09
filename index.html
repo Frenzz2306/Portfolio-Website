@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alistair's Portfolio Website</title>
+    <link
+      rel="shorcut icon"
+      href="img/187fcd16-9159-4045-a93b-d64880962dc1.jpg"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Start Header-->
+    <header class="header" id="header">
+      <a href="index.html" class="logo">Ali<span>stair.</span></a>
+      <nav class="navbar">
+        <a href="#home" class="active">HOME</a>
+        <a href="blog.html">BLOG</a>
+        <a href="flex.html">FLEX</a>
+      </nav>
+      <a href="#contact" class="contact">Contact</a>
+    </header>
+    <!--End Header-->
+
+    <!--Start Main Section-->
+    <section class="home" id="home">
+      <img src="img/img.png" alt="" class="img-box" />
+      <div class="home-content">
+        <h1>Hi, I'm <span>Alistair </span>Ybañez</h1>
+        <h2>IT Student at <span>Bukidnon State University</span></h2>
+        <p>
+          Welcome to my Website. Where I showcase my creative adventures and the
+          projects I'm most proud of. Feel free to browse around and get in
+          touch!
+        </p>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="https://github.com/Frenzz2306"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/profile.php?id=100071734240392"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://telegram.me/zashiie"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/washme.wepp/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#about" class="btn-main">About Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Section -->
+
+    <!--About Section-->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h1 class="heading">About <span>Me</span></h1>
+        <p>
+          8 Years from now, I will be working at the Big Company in the
+          Philippine called PNP Anti-Cybercrime Group (PNP-ACG) to implement and
+          enforce pertinent laws on cybercrime and other cyber- related cremes
+          and pursue and effective anti-cybercrime campaign.
+        </p>
+        <a href="#video-me" class="btn">Watch Video</a>
+      </div>
+      <div class="about-img">
+        <img src="img/IMG20240626142803.png" alt="" />
+      </div>
+    </section>
+    <!--End About Section-->
+
+    <!-- Start Video -->
+    <section id="video-me">
+      <div class="video-container">
+        <video src="flex vid/vid/lv_0_20241205202023.mp4" controls></video>
+      </div>
+    </section>
+    <!-- End Video -->
+
+    <!-- skills page -->
+    <section class="skills container">
+      <div class="title">
+        <h2>My <span>Skills</span></h2>
+      </div>
+
+      <p class="text">
+        "As I continue to grow as a Developer, I'm exgited to the skills I've
+        developed so far. This collection represents my current abilities which
+        are a testament to my dedication to learning and applying new knowledge"
+      </p>
+
+      <div class="row">
+        <div class="item">
+          <div class="item-text">
+            <span>MS Word</span>
+            <span class="w-90">90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-90"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-text">
+            <span>Photoshop</span>
+            <span class="w-75">75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-75"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-text">
+            <span>Powerpoint</span>
+            <span class="w-85">85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-85"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-text">
+            <span>After Effects</span>
+            <span class="w-80">80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-80"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-text">
+            <span>CSS3</span>
+            <span class="w-60">60%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-60"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-text">
+            <span>HTML5</span>
+            <span class="w-68">68%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar w-68"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of skills page -->
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+      <div class="forms">
+        <h2>Contact <span>Me</span></h2>
+        <form action="#home">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required=""
+          /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required=""
+          /><br />
+          <textarea
+            name="msg"
+            id="msg"
+            rows="6"
+            cols="20"
+            placeholder="Enter Your Message"
+          ></textarea
+          ><br />
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!--End Contact section-->
+
+    <div class="line"></div>
+
+    <!--Start Footer-->
+    <footer class="footer">
+      <h3>Alistair Ybañez &nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp; Student</h3>
+      <ul>
+        <li>
+          <a href="https://github.com/Frenzz2306"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://web.facebook.com/profile.php?id=100071734240392"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://telegram.me/drakaniiaaaa"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+          <a href="https://www.instagram.com/washme.wepp/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </li>
+      </ul>
+
+      <p>@2024 Alistair Ybañez. All Rights Reserved</p>
+    </footer>
+    <!--End Footer-->
+  </body>
+</html>

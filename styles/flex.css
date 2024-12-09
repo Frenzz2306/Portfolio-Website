@@ -1,0 +1,234 @@
+.videos {
+  padding: 8rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.videos h2 {
+  text-align: center;
+  justify-content: center;
+  padding: 0 0 3rem 0;
+  font-size: 2.4rem;
+  animation: fadeInUp 1s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+.videos .vid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  column-gap: 1.1rem;
+  padding: 0 10rem 0 10rem;
+}
+.videos .vid-container .in0 {
+  animation: fadeInUp 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+.videos .vid-container .in1 {
+  animation: fadeInUp 1s ease-in-out 0.7s;
+  animation-fill-mode: both;
+}
+.videos .vid-container .in2 {
+  animation: fadeInUp 1s ease-in-out 1s;
+  animation-fill-mode: both;
+}
+.videos .vid-container .in3 {
+  animation: fadeInUp 1s ease-in-out 1.2s;
+  animation-fill-mode: both;
+}
+.videos .vid-container .in4 {
+  animation: fadeInUp 1s ease-in-out 1.4s;
+  animation-fill-mode: both;
+}
+.videos .vid-container .in5 {
+  animation: fadeInUp 1s ease-in-out 1.5s;
+  animation-fill-mode: both;
+}
+.videos {
+  padding: 8rem 0;
+}
+.videos video {
+  max-width: 300px;
+  transition: 1s ease;
+}
+.videos video:hover {
+  box-shadow: 0 0 25px var(--main-color);
+}
+h3 {
+  padding-left: 10px;
+}
+/*Fam  Sectiom*/
+.fam h1.title {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.fam .fam-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.fam .fam-container img {
+  max-width: 40rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+.fam .fam-container img:hover {
+  box-shadow: 0 0 20px var(--main-color);
+  transform: scale(1.08);
+}
+/*Achievement Section*/
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+section.achievement {
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+.card-container {
+  display: flex;
+  margin: 0 2rem;
+}
+.card {
+  display: flex;
+  margin: 0 auto;
+  padding: 2em 3em;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background: #1c1f2b;
+  border-radius: 10px;
+  position: relative;
+}
+.card img {
+  width: 300px;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+.card img:hover {
+  transform: scale(1.06);
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.inspi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  gap: 10rem;
+  padding: 2.5rem 0;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 38%;
+}
+
+.inspi .inspi-container {
+  text-align: right;
+  max-width: 700px;
+}
+.inspi img {
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+.inspi-container h1.heading {
+  font-size: 3rem;
+  text-align: right;
+  padding: 0.5rem 0;
+}
+.inspi-container p {
+  line-height: 1.5rem;
+  font-size: 14px;
+  padding: 0.5rem 0 2rem 0;
+}
+.inspi .btn {
+  padding: 10px 18px;
+  border-radius: 50px;
+  color: var(--second-bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+.inspi .btn:hover {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+.inspi-container img {
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: opacity 0.4s ease-in-out;
+}
+.inspi1::-webkit-scrollbar {
+  width: 0;
+  display: hidden;
+}
+.inspi1 {
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 430px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+  gap: 2rem;
+}
+.inspi .inspi-box {
+  flex: 0 0 100%;
+  padding: 2rem;
+  border-radius: 50%;
+  scroll-snap-align: start;
+}

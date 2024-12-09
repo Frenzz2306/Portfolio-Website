@@ -1,0 +1,235 @@
+/*Main Section*/
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--second-bg-color);
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding: 90px 12% 0;
+}
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.home .img-box {
+  width: 29vw;
+  filter: drop-shadow(0 0 20px var(--main-color));
+  animation: fadeInRight 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+.home-content h1 {
+  font-size: 42px;
+  padding: 0.5rem 0;
+  animation: fadeInLeft 1s ease-in-out 1s;
+  animation-fill-mode: both;
+}
+.home-content h2 {
+  padding: 0.5rem 0;
+  animation: fadeInLeft 1s ease-in-out 1.3s;
+  animation-fill-mode: both;
+}
+.home-content p {
+  line-height: 25px;
+  padding: 0.5rem 0;
+  animation: fadeInLeft 1s ease-in-out 1.6s;
+  animation-fill-mode: both;
+}
+.home-content .socials ul {
+  display: flex;
+}
+.home-content .socials i {
+  font-size: 30px;
+  padding-right: 0.9rem;
+  padding: 16px 0;
+  color: var(--main-color);
+  margin: 0 6px;
+  transition: 0.3s ease-in-out;
+}
+.home-content .socials .fa-github {
+  animation: fadeInLeft 1s ease-in-out 1.9s;
+  animation-fill-mode: both;
+}
+.home-content .socials .fa-facebook {
+  animation: fadeInLeft 1s ease-in-out 2s;
+  animation-fill-mode: both;
+}
+.home-content .socials .fa-telegram {
+  animation: fadeInLeft 1s ease-in-out 2.1s;
+  animation-fill-mode: both;
+}
+.home-content .socials .fa-square-instagram {
+  animation: fadeInLeft 1s ease-in-out 2.2s;
+  animation-fill-mode: both;
+}
+.home-content .socials i:hover {
+  color: var(--text-color);
+  transform: scale(1.2) translateY(-3px);
+  filter: drop-shadow(0 0 20px var(--main-color));
+}
+.about-content .btn {
+  padding: 10px 18px;
+}
+.btn-main {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 1rem 0;
+  border-radius: 50px;
+  color: var(--second-bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(270deg, #df8908 10%, #ff1d15 100%);
+  box-shadow: 0 0 25px var(--main-color);
+  animation: fadeInLeft 1s ease-in-out 2.3s;
+  animation-fill-mode: both;
+  transition: 0.4s ease-in-out;
+}
+.btn-main:hover {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+/*About Section*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  gap: 10rem;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+.about-content {
+  text-align: right;
+  max-width: 700px;
+}
+
+.about-img {
+  transition: 0.4s ease-in-out;
+  transition: 0.4 ease-in-out;
+  animation: animate 2.5s ease-in-out forwards infinite;
+}
+.about-img img {
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+}
+.about-content h1 {
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+.about-content p {
+  line-height: 1.5rem;
+  font-size: 14px;
+  padding: 0.5rem 0 1rem 0;
+}
+
+/*Video Section*/
+#video-me {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+.video-container video {
+  height: 60vh;
+  border-radius: 20px;
+}
+
+/*Skill Section */
+.skills.container {
+  padding: 1rem 8rem;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2rem;
+}
+.skills h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.skills .text {
+  width: 70%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.skills .row {
+  margin: 1rem 0;
+}
+.skills .item {
+  padding: 0.5rem 0;
+  margin: 0.3rem 0;
+}
+.skills .item-text {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+.skills .item-text span:last-child {
+  position: absolute;
+}
+.skills .item-text .w-90 {
+  margin-left: 85%;
+}
+.skills .item-text .w-75 {
+  margin-left: 70%;
+}
+.skills .item-text .w-85 {
+  margin-left: 80%;
+}
+.skills .item-text .w-80 {
+  margin-left: 75%;
+}
+.skills .item-text .w-60 {
+  margin-left: 55%;
+}
+.skills .item-text .w-68 {
+  margin-left: 63%;
+}
+.progress {
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  height: 16px;
+  width: 100%;
+  background-color: var(--nero);
+  overflow: hidden;
+}
+.progress-bar {
+  background: var(--main-color);
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90 {
+  width: 90%;
+}
+.progress-bar.w-75 {
+  width: 75%;
+}
+.progress-bar.w-85 {
+  width: 85%;
+}
+.progress-bar.w-80 {
+  width: 80%;
+}
+.progress-bar.w-60 {
+  width: 60%;
+}
+.progress-bar.w-68 {
+  width: 68%;
+}

@@ -103,21 +103,22 @@ h2.blog-section {
 .projects {
   color: var(--bg-color);
   align-items: center;
+  justify-content: center;
   animation: scroll linear;
   animation-timeline: view();
   animation-range: entry 0 cover 50%;
-  padding: 0 10rem;
 }
 .projects h2 {
   color: var(--text-color);
   text-align: center;
   font-size: 38px;
+  margin-bottom: 1.1rem;
 }
 .project-container {
   display: grid;
   grid-template-areas:
-    "fav1 fav1"
-    "fav2 fav3";
+    ". . . . . . fav1 fav1 . . . . . . "
+    ". . . . . . fav2 fav3 . . . . . . ";
   gap: 2rem;
 }
 .project-box1 {

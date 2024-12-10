@@ -149,7 +149,7 @@
   animation-timeline: view();
   animation-range: entry 0 cover 50%;
 }
-.row {
+.skills-section {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 2rem;
@@ -163,7 +163,7 @@
   margin: 1.5rem auto;
   text-align: center;
 }
-.skills .row {
+.skills .skills-section {
   margin: 1rem 0;
 }
 .skills .item {
@@ -176,9 +176,6 @@
   font-weight: 600;
   font-size: 1.3rem;
   position: relative;
-  animation: scroll linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 50%;
 }
 .skills .item-text span:last-child {
   position: absolute;

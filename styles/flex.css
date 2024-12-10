@@ -57,32 +57,6 @@
 h3 {
   padding-left: 10px;
 }
-/*Fam  Sectiom*/
-.fam h1.title {
-  text-align: center;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-.fam .fam-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: scroll linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 50%;
-}
-
-.fam .fam-container img {
-  max-width: 40rem;
-  margin: 0 auto;
-  border-radius: 30px;
-  transition: 0.3s ease;
-}
-.fam .fam-container img:hover {
-  box-shadow: 0 0 20px var(--main-color);
-  transform: scale(1.08);
-}
 /*Achievement Section*/
 h1 {
   color: white;
@@ -97,7 +71,9 @@ section.achievement {
 }
 .card-container {
   display: flex;
-  margin: 0 2rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 3rem;
 }
 .card {
   display: flex;
@@ -112,7 +88,6 @@ section.achievement {
 }
 .card img {
   width: 300px;
-  display: flex;
   border-radius: 10px;
   transition: 0.3s ease-in;
 }
@@ -159,7 +134,34 @@ section.achievement {
     --angle: 360deg;
   }
 }
+/*Fam  Sectiom*/
+.fam h1.title {
+  text-align: center;
 
+  margin: 1.1rem auto;
+  padding: 2rem 0;
+}
+.fam .fam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9rem;
+  gap: 2rem;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.fam .fam-container img {
+  max-width: 25rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+.fam .fam-container img:hover {
+  box-shadow: 0 0 20px var(--main-color);
+  transform: scale(1.08);
+}
 /*Inspi Section*/
 .inspi {
   display: flex;

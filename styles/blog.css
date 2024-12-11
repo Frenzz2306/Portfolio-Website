@@ -2,7 +2,6 @@
 .blog {
   padding: 5rem 0 2.5rem 0;
 }
-
 h2.blog-section {
   text-align: center;
   color: var(--text-color);
@@ -50,7 +49,6 @@ h2.blog-section {
 .blog .item .item-content {
   padding: 1.5rem;
 }
-
 .blog .blog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -99,6 +97,7 @@ h2.blog-section {
   animation: fadeInUp 1s ease-in-out 1.7s;
   animation-fill-mode: both;
 }
+
 /*Project Section*/
 .projects {
   color: var(--bg-color);
@@ -144,7 +143,6 @@ h2.blog-section {
   font-size: 1.2rem;
   width: 34rem;
 }
-
 .project-box2 {
   grid-area: fav2;
   position: relative;
@@ -166,7 +164,6 @@ h2.blog-section {
   font-size: 0.7rem;
   width: 28rem;
 }
-
 .project-box3 {
   grid-area: fav3;
   position: relative;
@@ -188,7 +185,6 @@ h2.blog-section {
   font-size: 0.7rem;
   width: 28rem;
 }
-
 .project-box1:hover,
 .project-box2:hover,
 .project-box3:hover {

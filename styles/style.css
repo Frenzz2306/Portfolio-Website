@@ -193,10 +193,10 @@
   margin-left: 75%;
 }
 .skills .item-text .w-60 {
-  margin-left: 55%;
+  margin-left: 45%;
 }
 .skills .item-text .w-68 {
-  margin-left: 63%;
+  margin-left: 45%;
 }
 .progress {
   margin: 0.8rem 0;
@@ -225,8 +225,8 @@
   width: 80%;
 }
 .progress-bar.w-60 {
-  width: 60%;
+  width: 50%;
 }
 .progress-bar.w-68 {
-  width: 68%;
+  width: 50%;
 }
